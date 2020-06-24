@@ -16,17 +16,8 @@ namespace SOLID_Principles.SingleResponsibility.Models
         public string Password { get; set; }
 
 
-     
+     //Artık User classı sadece bir User nesnesi neleri barındırması gerekiyorsa onları barındırıyor. Yani sadece kendi işini yapıyor. Single responsibility prensibine uygun hareket ediyor.
 
-        public void Login(string username, string password)
-        {
-            //bu alanda bir userın login olmasıyla ilgili işlemler yapılır...
-        }
-
-        public void Logout(string username)
-        {
-            //bu alanda logout olma işlemi yapılır...
-        }
     }
 
 
