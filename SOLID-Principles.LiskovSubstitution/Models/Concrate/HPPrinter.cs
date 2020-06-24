@@ -12,12 +12,5 @@ namespace SOLID_Principles.LiskovSubstitution.Models.Concrate
             //print ile ilgili işlemler
         }
 
-        //şuanda Liskova aykırı bir yapıda 
-        public override void Scan(string value)
-        {
-            //bu yazıcının scan özelliği yok ise??
-            //bu sınıfın üst sınıfı göze alınarak bu özelliği varmış sanılıp gerekli kodlar doldurulur ise hata ile karşılaşılır. Kaldı kii yeni yazılımcının bu şekilde anlaması çok normaldir. 
-            throw new NotImplementedException();
-        }
     }
 }
