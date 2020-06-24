@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SOLID_Principles.SingleResponsibility.Models
 {
-    public class Adress
+    public class Address
     {
         public int Id { get; set; }
         public string City { get; set; }
