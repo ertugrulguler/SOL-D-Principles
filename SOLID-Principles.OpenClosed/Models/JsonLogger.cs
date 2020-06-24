@@ -5,12 +5,11 @@ using System.Text;
 
 namespace SOLID_Principles.OpenClosed.Models
 {
-    public class DbLog:ILogger
+    public class JsonLogger : ILogger
     {
         public bool Log(string value)
         {
-            //gerekli işlemler
-            return true;
+            throw new NotImplementedException();
         }
     }
 }
