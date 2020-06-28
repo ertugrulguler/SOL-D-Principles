@@ -4,11 +4,8 @@ using System.Text;
 
 namespace SOLID_Principles.InterfaceSegregation.Interfaces
 {
-    interface IBaseApi:IGet
+    public interface IGet
     {
-        void Put(int id);
-        void Delete(int id);
-        void Post(int id);
-    
+        void Get(int id);
     }
 }

@@ -5,25 +5,11 @@ using System.Text;
 
 namespace SOLID_Principles.InterfaceSegregation.API_Class
 {
-    class Notification : IBaseApi
+    class Notification : IGet
     {
-        //Bildirimler için sadece get işlemi yapılır. Peki burada neden diğerleri de yer alıyor? Çünkü Interface Segregation prensibine uymuyoruz.
-        public void Delete(int id)
-        {
-            throw new NotImplementedException();
-        }
-
+        //artık IBaseApi den implement edilen classlar IBaseApi'nin de IGet ten implement olmasından kaynaklı get işleminde herhangi bir sorun yaşamayacak.
+        //Aynı zamanda sadece get işlemi yapacak olan classlar da IGet ten türemesi yeterli olacaktır.
         public void Get(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Post(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Put(int id)
         {
             throw new NotImplementedException();
         }
